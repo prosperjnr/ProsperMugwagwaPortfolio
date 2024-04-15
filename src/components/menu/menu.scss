@@ -27,8 +27,19 @@
     color: white;
     width: 60%;
 
+    @include mobileLandscape {
+      font-size: 20px;
+      display: flex;
+      flex-direction: column;
+      margin-top: 10px;
+    }
+
     li {
       margin-bottom: 25px;
+
+      @include mobileLandscape {
+        margin-bottom: 15px;
+      }
       a {
         font-size: inherit;
         color: inherit;

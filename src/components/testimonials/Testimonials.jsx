@@ -8,7 +8,7 @@ export default function testimonials() {
       title: "Senior Developer",
       img: "https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
       icon: "assets/twitter.png",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem.",
+      desc: "Working with Prosper was a breeze! He transformed my vision into a stunning website that exceeded my expectations.",
     },
     {
       id: 2,
@@ -16,7 +16,7 @@ export default function testimonials() {
       title: "Co-Founder of DELKA",
       img: "https://images.pexels.com/photos/428321/pexels-photo-428321.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
       icon: "assets/youtube.png",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem recusandae perspiciatis ducimus vel hic temporibus. ",
+      desc: "Thanks to Prosper Mugwagwa, my website now stands out in a crowded market. His creative solutions and technical skills are top-notch ",
       featured: true,
     },
     {
@@ -25,7 +25,7 @@ export default function testimonials() {
       title: "CEO of ALBI",
       img: "https://images.pexels.com/photos/3863793/pexels-photo-3863793.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
       icon: "assets/linkedin.png",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem",
+      desc: "Couldn't be happier with the website Prosper created for my business. It's user-friendly, visually appealing, and has already boosted my online presence",
     },
   ];
   return (

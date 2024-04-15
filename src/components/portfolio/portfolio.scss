@@ -8,9 +8,15 @@
 
   h1 {
     font-size: 50px;
+    align-items: center;
 
     @include mobile {
       font-size: 20px;
+    }
+    @include mobileLandscape {
+      overflow: hidden;
+      padding: 10px;
+      font-size: 23px;
     }
   }
 
@@ -19,11 +25,17 @@
     padding: 0;
     list-style: none;
     display: flex;
+    overflow: hidden;
+    align-items: center;
 
     @include mobile {
       margin: 10px 0;
       flex-wrap: wrap;
       justify-content: center;
+    }
+    @include mobileLandscape {
+      padding: 0;
+      margin: 2px 0;
     }
   }
 
@@ -36,6 +48,9 @@
 
     @include mobile {
       width: 100%;
+    }
+    @include mobileLandscape {
+      justify-content: stretch;
     }
 
     .item {
@@ -52,7 +67,7 @@
       position: relative;
       transition: all 0.5s ease;
       cursor: pointer;
-
+      background-color: paleturquoise;
       @include mobile {
         width: 115px;
         height: 95px;
@@ -68,6 +83,10 @@
         height: 100%;
         object-fit: cover;
         z-index: 1;
+      }
+      .weatherImg {
+        width: 50%;
+        height: auto;
       }
       &:hover {
         background-color: $mainColor;

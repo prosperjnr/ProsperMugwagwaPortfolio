@@ -1,6 +1,12 @@
 import "./portfolio.scss";
 import PortfolioList from "../portfolioList/PortfolioList";
 import { useEffect, useState } from "react";
+import groceryList from "../..//Portfolio_Img/grocery_list.png";
+import schoolWebsite from "../..//Portfolio_Img/schoolWebsite.png";
+import techNotesApp from "../..//Portfolio_Img/techNotes.png";
+import weatherApp from "../..//Portfolio_Img/weatherApp.png";
+import jokesApp from "../..//Portfolio_Img/jokesApp.png";
+
 import {
   featuredPortfolio,
   webPortfolio,
@@ -70,7 +76,63 @@ export default function Portfolio() {
           />
         ))}
       </ul>
+
       <div className="container">
+        <a
+          href="https://ultimate-grocery-list.netlify.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className="item">
+            <img src={groceryList} alt="groceryList app" />
+            <h3>Grocery List App</h3>
+          </div>
+        </a>
+        <a
+          href="https://successcombined.000webhostapp.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className="item">
+            <img src={schoolWebsite} alt="groceryList app" />
+            <h3>School Website</h3>
+          </div>
+        </a>
+        <a
+          href="https://technotes-vgew.onrender.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className="item">
+            <img src={techNotesApp} alt="groceryList app" />
+            <h3>Technotes App</h3>
+          </div>
+        </a>
+        <a
+          href="https://ultimatepweather.netlify.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className="item">
+            <img
+              src={weatherApp}
+              alt="groceryList app"
+              className="weatherImg"
+            />
+            <h3>Weather App</h3>
+          </div>
+        </a>
+        <a
+          href="https://prosperjrjokes.netlify.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className="item">
+            <img src={jokesApp} alt="groceryList app" />
+            <h3>Jokes App</h3>
+          </div>
+        </a>
+
         {data.map((d) => (
           <div className="item">
             <img src={d.img} alt="" />

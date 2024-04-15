@@ -8,10 +8,15 @@
     flex-direction: column;
     align-items: center;
   }
+  @include mobileLandscape {
+    flex-direction: row;
+    align-items: stretch;
+  }
 
   .left {
     flex: 0.5;
     overflow: hidden;
+    display: flex;
 
     .imgContainer {
       width: 700px;
@@ -20,7 +25,7 @@
       background-color: crimson;
       border-radius: 50%;
       display: flex;
-      align-items: flex-end;
+      align-items: center;
       justify-content: center;
       float: right;
 
@@ -28,8 +33,15 @@
         align-items: flex-start;
       }
 
+      @include mobileLandscape {
+        width: 500px;
+        height: 500px;
+        align-items: stretch;
+        justify-content: center;
+      }
+
       img {
-        height: 90%;
+        height: 100%;
 
         @include mobile {
           height: 60%;
@@ -61,15 +73,21 @@
         @include mobile {
           font-size: 35px;
         }
+        @include mobileLandscape {
+          font-size: 50px;
+        }
       }
       h2 {
-        font-size: 30px;
+        font-size: 32px;
+        @include mobileLandscape {
+          font-size: 32px;
+        }
       }
       h3 {
         font-size: 30px;
         @include mobile {
           font-size: 25px;
-        } 
+        }
         span {
           font-size: inherit;
           color: crimson;

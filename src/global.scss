@@ -7,3 +7,9 @@ $width: 768px;
     @content;
   }
 }
+
+@mixin mobileLandscape {
+  @media screen and (min-aspect-ratio: 7/4) {
+    @content;
+  }
+}

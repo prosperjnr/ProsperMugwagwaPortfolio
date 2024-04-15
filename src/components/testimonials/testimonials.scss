@@ -9,12 +9,19 @@
   @include mobile {
     justify-content: space-around;
   }
+  @include mobileLandscape {
+    justify-content: space-around;
+  }
 
   h1 {
     font-size: 50px;
+    overflow: hidden;
 
     @include mobile {
       font-size: 20px;
+    }
+    @include mobileLandscape {
+      font-size: 35px;
     }
   }
 
@@ -27,6 +34,11 @@
 
     @include mobile {
       flex-direction: column;
+      height: 100%;
+    }
+
+    @include mobileLandscape {
+      flex-direction: row;
       height: 100%;
     }
 
@@ -46,6 +58,13 @@
         margin: 10px 0;
       }
 
+      @include mobileLandscape {
+        padding: 2px;
+
+        width: 30%;
+        margin: 2%;
+      }
+
       &.featured {
         width: 300px;
         height: 75%;
@@ -55,6 +74,9 @@
           width: 250px;
           height: 180px;
           margin: 1px;
+        }
+        @include mobileLandscape {
+          width: 32%;
         }
       }
 
@@ -66,6 +88,9 @@
         display: flex;
         align-self: center;
         justify-content: center;
+        overflow: hidden;
+        height: 25%;
+        padding: 5px;
 
         @include mobile {
           overflow: hidden;
@@ -75,6 +100,7 @@
           &.left,
           &.right {
             height: 25px;
+            overflow: hidden;
           }
           &.user {
             height: 60px;
@@ -95,6 +121,7 @@
         padding: 10px;
         border-radius: 10px;
         background-color: rgb(236, 197, 205);
+        height: 50%;
 
         @include mobile {
           font-size: 10px;
@@ -113,15 +140,16 @@
         }
 
         h3 {
-          margin-bottom: 5px;
-
+          padding-bottom: 5px;
+          overflow: hidden;
           @include mobile {
             font-size: 14px;
-            overflow: hidden;
           }
         }
         h4 {
           color: rgb(120, 109, 109);
+          padding: 5px;
+          overflow: hidden;
 
           @include mobile {
             font-size: 13px;

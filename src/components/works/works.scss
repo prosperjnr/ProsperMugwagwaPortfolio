@@ -14,14 +14,24 @@
     @include mobile {
       display: none;
     }
+    @include mobileLandscape {
+      display: block;
+    }
 
     &.left {
       left: 100px;
       transform: rotateY(180deg);
+
+      @include mobileLandscape {
+        left: 1%;
+      }
     }
 
     &.right {
       right: 100px;
+      @include mobileLandscape {
+        right: 1%;
+      }
     }
   }
 
@@ -36,6 +46,11 @@
       height: 100vh;
       flex-direction: column;
       justify-content: center;
+    }
+
+    @include mobileLandscape {
+      flex-direction: row;
+      height: 80vh;
     }
 
     .container {
@@ -61,6 +76,10 @@
           margin: 5px 0;
         }
 
+        @include mobileLandscape {
+          width: 80%;
+        }
+
         .left {
           flex: 4;
           height: 100%;
@@ -77,8 +96,8 @@
             overflow: hidden;
 
             .imgContainer {
-              width: 28px;
-              height: 28px;
+              width: 25px;
+              height: 25px;
               border-radius: 50%;
               background-color: rgb(245, 179, 155);
               display: flex;
@@ -87,20 +106,29 @@
               overflow: hidden;
 
               img {
-                width: 20px;
+                width: 25px;
               }
             }
             h2 {
-              font-size: 12px;
+              font-size: 3.5vh;
+              @include mobile {
+                font-size: 75%;
+              }
             }
             p {
-              font-size: 10px;
+              font-size: 3vh;
+              @include mobile {
+                font-size: 65%;
+              }
             }
             span {
-              font-size: 12px;
+              font-size: 3vh;
               font-weight: 500;
               text-decoration: underline;
               cursor: pointer;
+              @include mobile {
+                font-size: 65%;
+              }
             }
           }
         }

@@ -7,6 +7,10 @@
     flex-direction: column;
   }
 
+  @include mobileLandscape {
+    flex-direction: row;
+  }
+
   .left {
     flex: 1;
     overflow: hidden;
@@ -22,6 +26,10 @@
     align-items: center;
     justify-content: center;
 
+    @include mobileLandscape {
+      padding-left: 10px;
+    }
+
     h2 {
       font-size: 25px;
     }
@@ -33,6 +41,10 @@
       flex-direction: column;
       align-items: center;
       justify-content: space-around;
+
+      @include mobileLandscape {
+        width: 90%;
+      }
 
       input {
         width: 300px;
