@@ -1,47 +1,47 @@
 import "./portfolio.scss";
-import PortfolioList from "../portfolioList/PortfolioList";
-import { useEffect, useState } from "react";
+// import PortfolioList from "../portfolioList/PortfolioList";
+// import { useState } from "react";
 import groceryList from "../..//Portfolio_Img/grocery_list.png";
 import schoolWebsite from "../..//Portfolio_Img/schoolWebsite.png";
 import techNotesApp from "../..//Portfolio_Img/techNotes.png";
 import weatherApp from "../..//Portfolio_Img/weatherApp.png";
 import jokesApp from "../..//Portfolio_Img/jokesApp.png";
 
-import {
+/* import {
   featuredPortfolio,
   webPortfolio,
   mobilePortfolio,
   designPortfolio,
   contentPortfolio,
 } from "../../data";
-
+ */
 export default function Portfolio() {
-  const [selected, setSelected] = useState("featured");
-  const [data, setData] = useState([]);
-  const list = [
-    {
-      id: "featured",
-      title: "Featured",
-    },
-    {
-      id: "web",
-      title: "Web App",
-    },
-    {
-      id: "mobile",
-      title: "Mobile App",
-    },
-    {
-      id: "design",
-      title: "Design",
-    },
-    {
-      id: "content",
-      title: "Content",
-    },
-  ];
+  // const [selected, setSelected] = useState("featured");
+  // const [data, setData] = useState([]);
+  // const list = [
+  //   {
+  //     id: "featured",
+  //     title: "Featured",
+  //   },
+  //   {
+  //     id: "web",
+  //     title: "Web App",
+  //   },
+  //   {
+  //     id: "mobile",
+  //     title: "Mobile App",
+  //   },
+  //   {
+  //     id: "design",
+  //     title: "Design",
+  //   },
+  //   {
+  //     id: "content",
+  //     title: "Content",
+  //   },
+  // ];
 
-  useEffect(() => {
+  /*  useEffect(() => {
     switch (selected) {
       case "featured":
         setData(featuredPortfolio);
@@ -61,12 +61,15 @@ export default function Portfolio() {
       default:
         setData(featuredPortfolio);
     }
-  }, [selected]);
+  }, [selected]); */
 
   return (
     <div className="portfolio" id="portfolio">
-      <h1>Portfolio</h1>
-      <ul>
+      <div className="portfolioHeading">
+        <h1>Portfolio</h1>
+      </div>
+      <h2 className="portfolioSub">Web Apps and Websites</h2>
+      {/*  { <ul>
         {list.map((item) => (
           <PortfolioList
             title={item.title}
@@ -75,7 +78,7 @@ export default function Portfolio() {
             id={item.id}
           />
         ))}
-      </ul>
+      </ul>} */}
 
       <div className="container">
         <a
@@ -133,12 +136,12 @@ export default function Portfolio() {
           </div>
         </a>
 
-        {data.map((d) => (
+        {/*  {data.map((d) => (
           <div className="item">
             <img src={d.img} alt="" />
             <h3>{d.title}</h3>
           </div>
-        ))}
+        ))} */}
       </div>
     </div>
   );
