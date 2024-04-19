@@ -4,19 +4,19 @@
 
   .sections {
     width: 100%;
-    height: calc(100vh - 150px);
-    background-color: lightsalmon;
+    height: calc(100vh - 70px);
+    background-color: white;
     position: relative;
     // top: 70px;
     margin-top: 70px;
     scroll-behavior: smooth;
     @include mobile {
-      height: calc(100vh - 160px);
+      height: calc(100vh - 70px);
     }
 
-    > * {
+    > *:not(.footer_container) {
       width: 100vw;
-      height: calc(100vh - 150px);
+      height: calc(100vh - 70px);
     }
   }
 }
