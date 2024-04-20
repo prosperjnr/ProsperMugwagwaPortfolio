@@ -92,7 +92,7 @@ export default function Portfolio() {
           </div>
         </a>
         <a
-          href="https://successcombined.000webhostapp.com/"
+          href="https://successcombined.netlify.app/"
           target="_blank"
           rel="noopener noreferrer"
         >
